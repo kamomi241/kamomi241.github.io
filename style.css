@@ -1,0 +1,65 @@
+body {
+  background: #000; 
+}
+  
+.buttontable {
+  margin:auto;
+}
+
+canvas {
+  background: #101010;
+  box-shadow: 0 0 0 2px #191919;
+} 
+  
+
+.font {
+  margin-left: 60px;
+  color: #b3b3b3;
+}
+.img-box {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.img1, .img2 {
+  width: auto;
+  height: 200px;
+  position: absolute;
+  background: center center no-repeat;
+  animation: anime 10s 0s infinite;
+  opacity: 0;
+}
+.img3, .img4 {
+  left: 500px;
+  width: auto;
+  height: 300px;
+  position: absolute;
+  background: center center no-repeat;
+  animation: anime 10s 0s infinite;
+  opacity: 0;
+}
+
+.img2,.img4 {
+  animation-delay: 5s;
+}
+
+@keyframes anime {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 1;
+  }
+  60% {
+      opacity: 0;
+}
+  100% {
+      opacity: 0;
+  }
+}
+.widtext {
+  display: inline-block; 
+  margin-left: 60px;
+  color: #b3b3b3;
+}
